@@ -1,4 +1,4 @@
-## Send Search To WorldCat and/ or Google Scholar Facets
+## Send Search To WorldCat and/or Google Scholar Facets
 
 ### System Components
  - PBO
