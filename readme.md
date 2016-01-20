@@ -24,10 +24,20 @@ var worldcat_search_url = "https://yourlibrary.on.worldcat.org/search?&queryStri
 ```
 
 #### Step 2) Include JavaScript File
+
 The JavaScript file send-search-to.js needs to be uploaded to Primo or a web server. Once the file has been uploaded, the following line must be updated to point to the file's location:
+
+If you upload the JavaScript file to an external web server:
 ```html
 <script src="//www.yourlibrary.edu/js/send-search-to.js"></script>
 ```
+
+If you upload the JavaScript file via Primo Back Office (PBO):
+```html
+<script src="//{PRIMO SERVER DOMAIN NAME}/primo_library/libweb/uploaded_files/{VIEW NAME}/send-search-to.js"></script>
+```
+{PRIMO SERVER DOMAIN NAME} - the domain for your Primo website (e.g. alliance-primo.hosted.exlibrisgroup.com)
+{VIEW NAME} - the name of the Primo view for which the file was uploaded
 
 #### Step 3) Configuration
 There are 4 variable parameters to configure. If you do not want to use one of the facets, you can set the label and url to be blank for that option.
